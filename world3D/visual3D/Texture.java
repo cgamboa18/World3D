@@ -1,4 +1,4 @@
-package world3D;
+package world3D.visual3D;
 
 import java.awt.image.BufferedImage;
 import java.io.File;

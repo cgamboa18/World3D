@@ -10,8 +10,8 @@ public class Physics {
 		//System.out.println(pa.xVel + " " + pa.yVel + " " + pa.zVel);
 
 		// Update velocity based off of acceleration
-		pa.xVel += pa.xDir * pa.xAcc;
-		pa.yVel += pa.yDir * pa.yAcc;
+		pa.xVel += pa.xAcc; //pa.xDir * 
+		pa.yVel += pa.yAcc;
 		pa.zVel += pa.zAcc;
 
 		float totalVel = (float) Math.sqrt(Math.pow(pa.xVel, 2) + Math.pow(pa.yVel, 2));

@@ -1,4 +1,4 @@
-package world3D;
+package world3D.screen;
 
 public class Line {
 	public float beta;// Corrects fish eye effect

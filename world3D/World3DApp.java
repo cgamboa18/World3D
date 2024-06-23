@@ -9,6 +9,9 @@ import java.util.ArrayList;
 import javax.swing.JFrame;
 
 import world3D.scene.Scene;
+import world3D.screen.Camera;
+import world3D.screen.Screen;
+import world3D.visual3D.Texture;
 
 public class World3DApp extends JFrame implements Runnable{
 	
@@ -30,7 +33,7 @@ public class World3DApp extends JFrame implements Runnable{
 		image = new BufferedImage(WIDTH, HEIGHT, BufferedImage.TYPE_INT_RGB);
 		pixels = ((DataBufferInt)image.getRaster().getDataBuffer()).getData();
 		textures = new ArrayList<Texture>();
-		camera = new Camera(0, 0, 0, 1, 0, 0, -.66f);
+		camera = new Camera(0, 0, 0, 1, 0, 0, 0, -.66f);
 		world = new Scene();
 		screen = new Screen(world, textures, WIDTH, HEIGHT);
 		addKeyListener(camera);
